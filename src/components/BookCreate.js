@@ -16,7 +16,6 @@ function BookCreate({ onCreate }) {
         <input className='input'
           onChange={(e) => setWord(e.target.value)}
           value={word}
-          type="text"
         />
         <button className='button'>Add</button>
       </form>
