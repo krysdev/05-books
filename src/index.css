@@ -10744,3 +10744,7 @@ a.has-text-danger-dark:hover {
   width: 20px;
   z-index: 10;
 }
+html {
+  color: grey;
+  background-color: #303030;
+}

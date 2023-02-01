@@ -10,7 +10,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div>xxx
       <BookCreate onCreate={createBook}/>
     </div>
   );
