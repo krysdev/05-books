@@ -25,9 +25,10 @@ function App() {
     });
     setBooks(updatedBooks);
   };
-const editBookByID = (idToEdit) => { 
-  const updatedBooks = 
+const editBookByID = (idToEdit, titleToBeChanged) => {
+  const updatedBooks = books.map((el)=>1) //FIXME
   setBooks(updatedBooks)
+// console.log(idToEdit, titleToBeChanged)
 };
   return (
     <div className="app">

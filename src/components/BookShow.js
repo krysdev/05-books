@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import BookEdit from './BookEdit';
 
-function BookShow({ book, onDelete }) {
+function BookShow({ book, onDelete, onEdit }) {
   const [showEdit, setShowEdit] = useState(false);
 
   const handleDeleteClick = () => {
@@ -14,7 +14,7 @@ function BookShow({ book, onDelete }) {
   return (
     <div className="book-show">
       {/* {book.id} -  */}
-      {showEdit ? <BookEdit bookTitle={book.title}/> : <h3>{book.title}</h3>}
+      {showEdit ? <BookEdit book={book}  onEdit={onEdit} /> : <h3>{book.title}</h3>}
       <div className="actions">
         <button className="edit" onClick={handleEditClick}>
           Edit (managed by css)
